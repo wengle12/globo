@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wengle Informática - Publicação do Site</title>
+    <style>
+        :root {
+            --primary: #0056b3;
+            --secondary: #ff6600;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --success: #28a745;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        header {
+            background: var(--primary);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+            margin-top: 20px;
+        }
+        
+        h2 {
+            font-size: 20px;
+            margin-top: 25px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .step {
+            background: var(--light);
+            border-left: 4px solid var(--primary);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .step-number {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+        }
+        
+        .code {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: Consolas, Monaco, 'Andale Mono', monospace;
+        }
+        
+        .important {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .screenshot {
+            text-align: center;
+            margin: 20px 0;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+        .screenshot img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+        
+        .caption {
+            font-style: italic;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            margin: 5px;
+        }
+        
+        .btn:hover {
+            background-color: #004494;
+        }
+        
+        .btn-whatsapp {
+            background-color: var(--success);
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: #218838;
+        }
+        
+        .download-section {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: var(--light);
+            border-radius: 5px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: var(--dark);
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                border-radius: 0;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">WENGLE INFORMÁTICA</div>
+            <h1>Guia de Publicação do Site</h1>
+        </header>
+        
+        <div class="content">
+            <h2>Parabéns pela aquisição da hospedagem!</h2>
+            <p>Agora vamos publicar seu site. Siga estes passos cuidadosamente:</p>
+            
+            <div class="step">
+                <span class="step-number">1</span>
+                <strong>Acesse seu Painel de Controle (cPanel)</strong>
+            </div>
+            <p>Você deve ter recebido um e-mail com os dados de acesso ao cPanel. Geralmente o acesso é através de:</p>
+            <ul>
+                <li>URL: <code>https://seusite.com.br/cpanel</code> (substitua pelo seu domínio)</li>
+                <li>Ou: <code>https://cpanel.hospedagem.com</code> (consulte o e-mail recebido)</li>
+            </ul>
+            
+            <div class="screenshot">
+                <div class="caption">Exemplo de tela de login do cPanel</div>
+                <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%22400%22%20viewBox%3D%220%200%20800%20400%22%3E%3Crect%20fill%3D%22%23f5f5f5%22%20width%3D%22800%22%20height%3D%22400%22%2F%3E%3Crect%20x%3D%22200%22%20y%3D%22100%22%20fill%3D%22%23ffffff%22%20stroke%3D%22%23dddddd%22%20width%3D%22400%22%20height%3D%22200%22%20rx%3D%225%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%22140%22%20font-family%3D%22Arial%22%20font-size%3D%2218%22%20text-anchor%3D%22middle%22%20fill%3D%22%23333%22%3ELogin%20cPanel%3C%2Ftext%3E%3Crect%20x%3D%22250%22%20y%3D%22170%22%20fill%3D%22%23ffffff%22%20stroke%3D%22%23cccccc%22%20width%3D%22300%22%20height%3D%2230%22%20rx%3D%223%22%2F%3E%3Crect%20x%3D%22250%22%20y%3D%22210%22%20fill%3D%22%23ffffff%22%20stroke%3D%22%23cccccc%22%20width%3D%22300%22%20height%3D%2230%22%20rx%3D%223%22%2F%3E%3Crect%20x%3D%22320%22%20y%3D%22250%22%20fill%3D%22%230056b3%22%20width%3D%22160%22%20height%3D%2235%22%20rx%3D%223%22%2F%3E%3Ctext%20x%3D%22400%22%20y%3D%22272%22%20font-family%3D%22Arial%22%20font-size%3D%2214%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%3ELogin%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Tela de login do cPanel">
+            </div>
+            
+            <div class="step">
+                <span class="step-number">2</span>
+                <strong>Localize o Gerenciador de Arquivos</strong>
+            </div>
+            <p>No cPanel, procure por "Gerenciador de Arquivos" ou "File Manager".</p>
+            
+            <div class="screenshot">
+                <div class="caption">Ícone do Gerenciador de Arquivos no cPanel</div>
+                <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%22400%22%20viewBox%3D%220%200%20800%20400%22%3E%3Crect%20fill%3D%22%23f5f5f5%22%20width%3D%22800%22%20height%3D%22400%22%2F%3E%3Crect%20x%3D%2250%22%20y%3D%2250%22%20fill%3D%22%23ffffff%22%20stroke%3D%22%23dddddd%22%20width%3D%22700%22%20height%3D%22300%22%20rx%3D%225%22%2F%3E%3Ccircle%20cx%3D%22100%22%20cy%3D%22100%22%20r%3D%2230%22%20fill%3D%22%230056b3%22%2F%3E%3Ctext%20x%3D%22100%22%20y%3D%22105%22%20font-family%3D%22Arial%22%20font-size%3D%2212%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%3EF%3C%2Ftext%3E%3Ctext%20x%3D%22150%22%20y%3D%22105%22%20font-family%3D%22Arial%22%20font-size%3D%2216%22%20fill%3D%22%23333%22%3EGerenciador%20de%20Arquivos%3C%2Ftext%3E%3Ctext%20x%3D%22100%22%20y%3D%22170%22%20font-family%3D%22Arial%22%20font-size%3D%2214%22%20fill%3D%22%23333%22%3EAcesse%20e%20gerencie%20os%20arquivos%20do%20seu%20site%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Ícone do Gerenciador de Arquivos">
+            </div>
+            
+            <div class="step">
+                <span class="step-number">3</span>
+                <strong>Acesse a Pasta Pública</strong>
+            </div>
+            <p>No Gerenciador de Arquivos, navegue até a pasta <code>public_html</code>. Esta é a pasta principal onde seus arquivos devem ficar.</p>
+            
+            <div class="important">
+                <strong>Importante:</strong> Se você estiver usando um domínio principal, use a pasta <code>public_html</code>. Se for um subdomínio, procure pela pasta específica do subdomínio.
+            </div>
+            
+            <div class="step">
+                <span class="step-number">4</span>
+                <strong>Faça Upload dos Arquivos</strong>
+            </div>
+            <p>No Gerenciador de Arquivos, clique em "Upload" e selecione o arquivo HTML que você salvou. Se você tiver múltiplos arquivos (CSS, JS, imagens), faça upload de todos.</p>
+            
+            <div class="screenshot">
+                <div class="caption">Botão de Upload no Gerenciador de Arquivos</div>
+                <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22800%22%20height%3D%22400%22%20viewBox%3D%220%200%20800%20400%22%3E%3Crect%20fill%3D%22%23f5f5f5%22%20width%3D%22800%22%20height%3D%22400%22%2F%3E%3Crect%20x%3D%2250%22%20y%3D%2250%22%20fill%3D%22%23ffffff%22%20stroke%3D%22%23dddddd%22%20width%3D%22700%22%20height%3D%22300%22%20rx%3D%225%22%2F%3E%3Crect%20x%3D%22620%22%20y%3D%2260%22%20fill%3D%22%230056b3%22%20width%3D%22120%22%20height%3D%2235%22%20rx%3D%223%22%2F%3E%3Ctext%20x%3D%22680%22%20y%3D%2282%22%20font-family%3D%22Arial%22%20font-size%3D%2214%22%20text-anchor%3D%22middle%22%20fill%3D%22white%22%3EUpload%3C%2Ftext%3E%3Crect%20x%3D%22100%22%20y%3D%22100%22%20fill%3D%22%23f8f9fa%22%20stroke%3D%22%23dddddd%22%20width%3D%22600%22%20height%3D%2240%22%20rx%3D%223%22%2F%3E%3Ctext%20x%3D%22120%22%20y%3D%22125%22%20font-family%3D%22Arial%22%20font-size%3D%2214%22%20fill%3D%22%23333%22%3Epublic_html%3C%2Ftext%3E%3Crect%20x%3D%22100%22%20y%3D%22150%22%20fill%3D%22%23f8f9fa%22%20stroke%3D%22%23dddddd%22%20width%3D%22600%22%20height%3D%2240%22%20rx%3D%223%22%2F%3E%3Ctext%20x%3D%22120%22%20y%3D%22175%22%20font-family%3D%22Arial%22%20font-size%3D%2214%22%20fill%3D%22%23333%22%3Ecss%3C%2Ftext%3E%3Crect%20x%3D%22100%22%20y%3D%22200%22%20fill%3D%22%23f8f9fa%22%20stroke%3D%22%23dddddd%22%20width%3D%22600%22%20height%3D%2240%22%20rx%3D%223%22%2F%3E%3Ctext%20x%3D%22120%22%20y%3D%22225%22%20font-family%3D%22Arial%22%20font-size%3D%2214%22%20fill%3D%22%23333%22%3Eimages%3C%2Ftext%3E%3C%2Fsvg%3E" alt="Botão de Upload">
+            </div>
+            
+            <div class="step">
+                <span class="step-number">5</span>
+                <strong>Renomeie o Arquivo Principal (se necessário)</strong>
+            </div>
+            <p>O arquivo principal do seu site deve se chamar <code>index.html</code>. Se você fez upload com outro nome, renomeie-o para <code>index.html</code>.</p>
+            
+            <div class="step">
+                <span class="step-number">6</span>
+                <strong>Acesse seu Site</strong>
+            </div>
+            <p>Abra uma nova aba no navegador e digite seu domínio (ex: <code>https://www.wengleinformatica.com.br</code>). Seu site deve estar funcionando!</p>
+            
+            <div class="important">
+                <strong>Nota:</strong> Pode levar alguns minutos para que as alterações fiquem visíveis para todos devido ao cache e propagação de DNS.
+            </div>
+            
+            <div class="step">
+                <span class="step-number">7</span>
+                <strong>Habilite o SSL/HTTPS</strong>
+            </div>
+            <p>No cPanel, procure por "SSL/TLS" ou "Segurança". A maioria das hospedagens oferece SSL gratuito através do Let's Encrypt. Ative o SSL para seu domínio.</p>
+            
+            <div class="download-section">
+                <h2>Seu Site Wengle Informática Pronto</h2>
+                <p>Clique no botão abaixo para baixar o arquivo HTML completo do seu site. Faça upload deste arquivo para a pasta <code>public_html</code> no seu servidor.</p>
+                <a href="javascript:void(0);" onclick="downloadSite()" class="btn">Baixar Arquivo HTML</a>
+                <p>Renomeie o arquivo para <code>index.html</code> após o upload.</p>
+            </div>
+            
+            <div class="important">
+                <h3>Dúvidas ou Problemas?</h3>
+                <p>Se encontrar dificuldades durante o processo:</p>
+                <ol>
+                    <li>Consulte a documentação ou suporte da sua hospedagem</li>
+                    <li>Verifique se você está usando a pasta correta (<code>public_html</code>)</li>
+                    <li>Certifique-se de que renomeou o arquivo principal para <code>index.html</code></li>
+                    <li>Limpe o cache do seu navegador e tente acessar novamente</li>
+                </ol>
+            </div>
+            
+            <h2>Próximos Passos Após a Publicação</h2>
+            <ul>
+                <li>Cadastre seu site no Google Search Console</li>
+                <li>Crie uma página para seu negócio no Google Meu Negócio</li>
+                <li>Configure e-mails profissionais (ex: contato@seudominio.com)</li>
+                <li>Monitore seu site usando o Google Analytics</li>
+            </ul>
+        </div>
+        
+        <footer>
+            <p>Wengle Informática &copy; 2023 - Todos os direitos reservados</p>
+        </footer>
+    </div>
+
+    <script>
+        function downloadSite() {
+            // Código HTML completo do site da Wengle Informática
+            const siteContent = `<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wengle Informática - Manutenção e Venda de Computadores</title>
+    <meta name="description" content="Wengle Informática - Especializada em manutenção de computadores, notebooks, vendas e suporte técnico. Atendimento via site e WhatsApp.">
+    <meta name="keywords" content="manutenção de computadores, manutenção de notebook, assistência técnica, venda de computadores, suporte técnico, Wengle Informática">
+    
+    <style>
+        :root {
+            --primary: #0056b3;
+            --secondary: #ff6600;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --success: #28a745;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Header */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo h1 {
+            color: var(--primary);
+            font-size: 24px;
+            margin-left: 10px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: var(--primary);
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #004494;
+        }
+        
+        .btn-whatsapp {
+            background-color: var(--success);
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: #218838;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1547082299-de196ea013d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        /* Services */
+        .services {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: var(--light);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-content {
+            padding: 20px;
+        }
+        
+        .service-content h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        /* Support Section */
+        .support {
+            padding: 80px 0;
+            background-color: var(--light);
+        }
+        
+        .support-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .support-option {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        
+        .support-option h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        
+        .support-option p {
+            margin-bottom: 20px;
+        }
+        
+        /* Login Form */
+        .login-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        /* Products Section */
+        .products {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .product-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .product-content {
+            padding: 20px;
+        }
+        
+        .product-content h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .product-price {
+            font-weight: bold;
+            color: var(--secondary);
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #555;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+            }
+            
+            nav ul {
+                margin-top: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 5px 10px;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Floating WhatsApp Button */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--success);
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            transition: transform 0.3s;
+        }
+        
+        .floating-whatsapp:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>WENGLE INFORMÁTICA</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#support">Suporte</a></li>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Soluções em Informática e Tecnologia</h2>
+            <p>Especialistas em manutenção de computadores, notebooks, vendas e suporte técnico personalizado. Atendimento rápido e eficiente.</p>
+            <a href="#support" class="btn">Solicitar Suporte</a>
+            <a href="https://wa.me/5511999999999" class="btn btn-whatsapp">Chamar no WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Serviços</h2>
+                <p>Oferecemos soluções completas em informática para empresas e residências</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1563207153-f403bf289096?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="service-content">
+                        <h3>Manutenção de Computadores</h3>
+                        <p>Manutenção preventiva e corretiva para desktop, formatação, instalação de software e hardware.</p>
+                        <a href="#support" class="btn">Solicitar</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80');"></div>
+                    <div class="service-content">
+                        <h3>Manutenção de Notebooks</h3>
+                        <p>Reparo especializado em notebooks, troca de telas, teclados, limpeza interna e upgrades.</p>
+                        <a href="#support" class="btn">Solicitar</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1556655842-7ef413c7e70e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="service-content">
+                        <h3>Venda de Equipamentos</h3>
+                        <p>Computadores montados, notebooks, periféricos e acessórios com garantia e qualidade.</p>
+                        <a href="#products" class="btn">Ver Produtos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nossos Produtos</h2>
+                <p>Equipamentos de qualidade com garantia e suporte técnico especializado</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img" style="background-image: url('https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+                    <div class="product-content">
+                        <h3>Computador Gamer</h3>
+                        <p>Configuração high-end para jogos e aplicações
